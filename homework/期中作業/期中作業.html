@@ -60,11 +60,11 @@
                 width: 100%;
             }
             body
-                {
-                    background-image: url(2.jpg);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                }
+            {
+                background-image: url(2.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
         }
 
     </style>
@@ -75,7 +75,7 @@
 </head>
     <body>
         <h1>蘇乾羽的個人網站</h1>
-        <span style="font-size: 40px;cursor:pointer;font-family: 微軟正黑體;position: absolute;top:4%;" onclick="openNav()">&#9776;選單</span>
+        <span style="font-size: 40px;cursor:pointer;font-family: 微軟正黑體;position: relative;top:4%;" onclick="openNav()">&#9776;選單</span>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="https://qweasd049564.github.io/wp108b/homework/%E6%9C%9F%E4%B8%AD%E4%BD%9C%E6%A5%AD/%E9%97%9C%E6%96%BC%E6%88%91.html">關於我</a>
@@ -88,7 +88,7 @@
             <p style="font-size: 15px;color: white;font-family: 微軟正黑體;">qweasd049564@gamil.com</p>
 
         </div>
-        <div id="datetime" style="position: absolute;top:4%;right:3%;font-family: 微軟正黑體;font-size: 20px;">
+        <div id="datetime" style="position: relative;top:4%;right:3%;font-family: 微軟正黑體;font-size: 20px;">
             <script>
                 setInterval("document.getElementById('datetime').innerHTML=new Date().toLocaleString();", 1000);
             </script>
