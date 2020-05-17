@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>蘇乾羽的個人網站</title>
-    <embed src="Alone.mp3" autostart="true" hidden="true" loop="true">
+    <title>蘇乾羽的個人網站</title>     <!--網站標題-->
+    <embed src="Alone.mp3" autostart="true" hidden="true">  <!--背景音樂-->
 
     <style>
-        h1
+        h1   /*標題CSS設定*/
         {
             font-size: 40px;
             text-align: center;
@@ -17,7 +17,7 @@
             background-repeat: no-repeat;  /*不重複背景*/
             background-size: cover;        /*背景圖片覆蓋整個頁面*/
         }
-        .sidenav        /*側欄*/
+        .sidenav        /*側欄css設定*/
         {
             height: 100%; 
             width: 0;
@@ -46,17 +46,15 @@
             right: 2%;
             font-size: 25px;
         }
-        @media screen and (max-width: 450px)
+        @media screen and (max-width: 450px)   /*當裝置最大寬度小於450px時，改變版面*/
         {
             .sidenav
             {
                 padding-top: 30px;
-                
             }
             .sidenav a
             {
                 font-size: 20px;
-                
             }
             body
             {
@@ -77,9 +75,9 @@
     <meta name="keyword" content="蘇乾羽">   <!--網頁關鍵字-->
 </head>
     <body>
-        <h1>蘇乾羽的個人網站</h1>
+        <h1>蘇乾羽的個人網站</h1>   <!--標題-->
         <span style="font-size: 25px;cursor:pointer;font-family: 微軟正黑體;position: fixed;top:4%;" onclick="openNav()">&#9776;選單</span>
-        <div id="mySidenav" class="sidenav">
+        <div id="mySidenav" class="sidenav">     <!--側欄選單-->
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="https://qweasd049564.github.io/wp108b/homework/%E6%9C%9F%E4%B8%AD%E4%BD%9C%E6%A5%AD/%E9%97%9C%E6%96%BC%E6%88%91.html">關於我</a>
             <a href="https://qweasd049564.github.io/wp108b/homework/%E6%9C%9F%E4%B8%AD%E4%BD%9C%E6%A5%AD/%E5%8A%A0%E5%85%A5%E6%88%91.html">加入我</a>
@@ -91,19 +89,19 @@
             <p style="font-size: 15px;color: white;font-family: 微軟正黑體;padding-left: 17px;">qweasd049564@gamil.com</p>
 
         </div>
-        <div id="datetime" style="position: fixed;bottom:6%;left:44%;font-family: 微軟正黑體;">
+        <div id="datetime" style="position: fixed;bottom:6%;left:44%;font-family: 微軟正黑體;">   <!--顯示當前時間-->
             <script>
                 setInterval("document.getElementById('datetime').innerHTML=new Date().toLocaleString();", 1000);
             </script>
         </div>
         
         <script>
-            function openNav() 
+            function openNav()  //側欄開啟
             {
               document.getElementById("mySidenav").style.width = "222px";
             }
             
-            function closeNav() 
+            function closeNav() //側欄關閉
             {
               document.getElementById("mySidenav").style.width = "0";
             }
