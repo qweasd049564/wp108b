@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>加入我</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--根據裝置不同改變解析度-->
+        <meta charset="UTF-8">                   <!--設定網頁編碼-->
+        <meta name="author" content="蘇乾羽">    <!--紀錄網頁作者名稱-->
+        <meta name="keyword" content="蘇乾羽">   <!--網頁關鍵字-->
+    </head>
+    <style>
+        body
+        {
+            background-image: url(1.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        fieldset,form
+        {
+            width: 500px;
+            text-align: center;
+            border-style: solid 5px;
+            border-radius: 5px;
+        }
+        legend
+        {
+            font-size: 40px;
+            font-family: 微軟正黑體;
+            text-align: center;
+        }
+        form
+        {
+            text-align: center;
+            padding: 5px;
+            margin: auto;
+        }
+        input,label,input
+        {
+            font-family: 微軟正黑體;
+            padding: 5px;
+            margin: 2px;
+            border-radius: 5px;
+        }
+        textarea
+        {
+            border-radius: 5px;
+            width: 500px;
+            height: 200px;
+        }
+
+    </style>
+    <body>
+        <form>
+            <fieldset>
+            <legend>個人資料</legend>
+            <label>姓:</label>
+            <input type="text" id="firstname" name="firstname"><br>
+            <label>名:</label>
+
+            <input type="text" id="lastname" name="lastname"><br>
+            <label>使用者名稱:</label><br>
+            <input type="text" id="username" name="username"><br>
+
+            <label>e-mail:</label><br>
+            <input type="text" id="e-mail" name="e-mail"><br>
+
+            <label>密碼:</label><br>
+            <input type="text" id="password" name="password"><br>
+
+            <label>手機:</label><br>
+            <input type="tel" id="phonenumber" name="phonenumber"><br>
+
+            <label>性別:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <laber>男性</laber><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <laber>女性</laber><br>
+
+            <label for="birthday">生日:</label><br>
+            <input type="date" id="birthday" name="birthday" style="margin: 10px;"><br>
+
+            <label for="blood type">血型:</label><br>
+            <select id="blood type" name="blood type" style="margin: 10px;padding-top: 2px;">
+                <option value="O">O</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="AB">AB</option>
+            </select><br>
+
+            留言:<br>
+            <textarea name="message"></textarea>
+            <input type="submit" value="送出" style="color: mediumblue;padding: 10px;margin: 10px;">
+            <input type="reset" value="重設" style="color: mediumblue;padding: 10px;margin: 10px;">
+            </fieldset>
+        </form>
+    </body>
+</html>
