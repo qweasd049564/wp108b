@@ -33,15 +33,24 @@
                 background-repeat: no-repeat;  /*不重複背景*/
                 background-size: cover;        /*背景圖片覆蓋整個頁面*/
             }
-            .navbar
+            .navbar    /*功能表CSS設定*/
             {
+                overflow: hidden;
+                background-color: #333;
                 text-align: center;
             }
             .navbar a
             {
+                float: left;
+                color: white;
+                padding: 8px 10px;
                 font-family: 微軟正黑體;
                 text-decoration: none;
                 font-size: 25px;
+            }
+            .navbar a:hover     /*當滑鼠游標停留在連結上，文字背景變換顏色*/
+            {
+                background-color: red;
             }
             @media screen and (max-width: 450px)   /*當裝置最大寬度小於450px時，改變版面*/
             {
@@ -60,9 +69,10 @@
         <body>
             <div class="navbar">  <!--功能表-->
                 <a href="https://qweasd049564.github.io/wp108b/homework/%E6%9C%9F%E4%B8%AD%E4%BD%9C%E6%A5%AD/%E6%9C%9F%E4%B8%AD%E4%BD%9C%E6%A5%AD.html">首頁</a>
+                <a href="">加入我</a>
             </div>
 
-            <table style="margin: auto;">
+            <table style="margin: auto;margin-top: 10px;">
                 <tr>
                     <th>項目</th>
                     <th>內容</th>
