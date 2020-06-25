@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>蘇乾羽的個人網站</title>     <!--網站標題-->
+    <embed src="Alone.mp3" autostart="true" hidden="true">  <!--背景音樂-->
+
+    <style>
+        h1   /*標題CSS設定*/
+        {
+            font-size: 40px;
+            text-align: center;
+            font-family: 微軟正黑體;
+        }
+        body
+        {
+            background-image: url(1.jpeg);
+            background-repeat: no-repeat;  /*不重複背景*/
+            background-size: cover;        /*背景圖片覆蓋整個頁面*/
+        }
+        .sidenav        /*側欄css設定*/
+        {
+            height: 100%; 
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(19, 45, 197);
+            overflow-x: hidden;
+            padding-top: 40px;
+            transition: 0.5s;
+        }
+        .sidenav a
+        {
+            font-family: 微軟正黑體;
+            padding:15px;
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+            display: block;
+        }
+        .sidenav .closebtn
+        {
+            position: absolute;
+            top: 0%;
+            right: 2%;
+            font-size: 25px;
+        }
+        @media screen and (max-width: 450px)   /*當裝置最大寬度小於450px時，改變版面*/
+        {
+            .sidenav
+            {
+                padding-top: 30px;
+            }
+            .sidenav a
+            {
+                font-size: 20px;
+            }
+            body
+            {
+                background-image: url(2.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            h1
+            {
+                font-size: 25px;
+            }
+            img{
+                width: 200px;
+                margin: auto;
+            }
+        }
+
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--根據裝置不同改變解析度-->
+    <meta charset="UTF-8">                   <!--設定網頁編碼-->
+    <meta name="author" content="蘇乾羽">    <!--紀錄網頁作者名稱-->
+    <meta name="keyword" content="蘇乾羽">   <!--網頁關鍵字-->
+</head>
+    <body>
+        <h1>蘇乾羽的個人網站</h1>   <!--標題-->
+        <img src="3.png" width="320px" style="position: fixed;right: 40%;">
+        <span style="font-size: 25px;cursor:pointer;font-family: 微軟正黑體;position: fixed;top:4%;" onclick="openNav()">&#9776;選單</span>
+        <div id="mySidenav" class="sidenav">     <!--側欄選單-->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="https://qweasd049564.github.io/wp108b/homework/%E6%9C%9F%E4%B8%AD%E4%BD%9C%E6%A5%AD/%E9%97%9C%E6%96%BC%E6%88%91.html">關於我</a>
+            <a href="https://qweasd049564.github.io/wp108b/homework/%E6%9C%9F%E4%B8%AD%E4%BD%9C%E6%A5%AD/%E5%8A%A0%E5%85%A5%E6%88%91.html">加入我</a>
+            
+            <p style="font-size: 20px;color: white;font-family: 微軟正黑體;padding-left: 17px;">其他</p>
+            <p style="font-size: 15px;color: white;font-family: 微軟正黑體;padding-left: 17px;">連絡電話:</p>
+            <p style="font-size: 15px;color: white;font-family: 微軟正黑體;padding-left: 17px;">0978049564</p>
+            <p style="font-size: 15px;color: white;font-family: 微軟正黑體;padding-left: 17px;">電子郵件:</p>
+            <p style="font-size: 15px;color: white;font-family: 微軟正黑體;padding-left: 17px;">qweasd049564@gamil.com</p>
+
+        </div>
+        <div id="datetime" style="position: fixed;bottom:6%;left:44%;font-family: 微軟正黑體;">   <!--顯示當前時間-->
+            <script>
+                setInterval("document.getElementById('datetime').innerHTML=new Date().toLocaleString();", 1000);
+            </script>
+        </div>
+        
+        <script>
+            function openNav()  //側欄開啟
+            {
+              document.getElementById("mySidenav").style.width = "222px";
+            }
+            
+            function closeNav() //側欄關閉
+            {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </body>
+</html>

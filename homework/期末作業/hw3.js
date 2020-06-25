@@ -1,0 +1,10 @@
+const vector=require('./hw2')
+
+var v1=new vector(1,2,3)
+var v2=new vector(4,5,6)
+console.log("v1 = %s",[v1.x1,v1.x2,v1.x3])
+console.log("\nv2 = %s",[v2.x1,v2.x2,v2.x3])
+console.log("\nv1 + v2 = %s",v1.add(v2))
+console.log("\nv1 - v2 = %s",v1.sub(v2))
+console.log("\nv1 ‧ v2 = %s",v1.dot(v2))
+console.log("\nv1' = %s",v1.neg())
